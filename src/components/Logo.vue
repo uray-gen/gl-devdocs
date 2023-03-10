@@ -5,6 +5,6 @@
 		class="filter drop-shadow-lg my-6"
 		style="color: white; font-size: 120px; font-weight: bold"
 	>
-		Game Lobby Docs
+		Game Lobby
 	</h1>
 </template>
