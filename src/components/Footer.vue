@@ -1,0 +1,28 @@
+<template>
+	<footer class="bg-discord-green-560">
+		<div class="max-w-3xl mx-auto text-center px-16 pt-10 pb-4 text-gray-200">
+			<strong><router-link to="/">Game Lobby Docs</router-link></strong>
+			<p class="mb-4">
+				The place to use Game Lobby's api wrappers and packages!<br />Website originally created by the discord.js team
+			</p>
+			<Stats class="mb-4" />
+			<p class="text-xs break-words-legacy">
+				commit: {{ gitCommit }}<br />
+				built at: {{ builtAt }}
+			</p>
+		</div>
+	</footer>
+</template>
+
+<script lang="ts">
+declare const GIT_COMMIT_HASH: string;
+declare const BUILT_AT: string;
+</script>
+
+<script setup lang="ts">
+import { ref } from 'vue';
+import Stats from './Stats.vue';
+
+const gitCommit = ref(GIT_COMMIT_HASH);
+const builtAt = ref(new Date(BUILT_AT).toUTCString());
+</script>
