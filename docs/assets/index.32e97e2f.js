@@ -1,0 +1,1 @@
+import{_ as o}from"./Spinner.f482e680.js";import{d as t,o as e,t as r}from"./index.437b084d.js";import"./ReducedMotion.2f9e2908.js";const m=t({setup(a){return(s,c)=>(e(),r(o))}});export{m as default};
