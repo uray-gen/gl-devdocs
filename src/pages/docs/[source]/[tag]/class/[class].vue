@@ -26,7 +26,8 @@
 				<pre
 					ref="codeblock"
 					class="javascript"
-				><code>new {{ docs?.global }}.{{ cls?.name }}(<span v-for="(param, idx) in constructorParameters" :key="param.name">{{ param.name }}{{ (constructorParameters?.length ?? 1) - 1 !== idx ? ', ' : '' }}</span>);</code></pre>
+				><code>const { {{ cls?.name }} } = require('gl-brawlstars');
+<br>new {{ cls?.name }}(<span v-for="(param, idx) in constructorParameters" :key="param.name">{{ param.name }}{{ (constructorParameters?.length ?? 1) - 1 !== idx ? ', ' : '' }}</span>);</code></pre>
 				<ParameterTable v-if="cls.construct.params" :parameters="cls.construct.params" />
 			</div>
 
