@@ -44,7 +44,7 @@ const html = computed(() => {
 });
 
 useHead({
-	title: computed(() => `discord.js | ${file.value?.name ?? ''}`),
+	title: computed(() => `Game Lobby Docs | ${file.value?.name ?? ''}`),
 });
 
 onMounted(() => {
