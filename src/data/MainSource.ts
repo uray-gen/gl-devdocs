@@ -2,7 +2,7 @@ import semver from 'semver';
 
 import DocsSource from './DocsSource';
 
-const branchBlacklist = new Set(['list']);
+const branchBlacklist = new Set(['docs']);
 export default new DocsSource({
 	id: 'brawlstars',
 	name: 'Brawl Stars',
