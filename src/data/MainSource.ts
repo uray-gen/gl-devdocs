@@ -6,7 +6,7 @@ const branchBlacklist = new Set(['list']);
 export default new DocsSource({
 	id: 'brawlstars',
 	name: 'Brawl Stars',
-	global: 'Brawl Stars',
+	global: 'gl-brawlstars',
 	docsRepo: 'uray-gen/gl-devdocs',
 	repo: 'uray-gen/gl-brawlstars',
 	defaultTag: 'main',
