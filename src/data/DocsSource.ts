@@ -6,6 +6,7 @@ import semver from 'semver';
 interface DocsSourceOptions {
 	id: string;
 	name: string;
+	global: string;
 	docsRepo: string;
 	repo: string;
 	defaultTag?: string;
