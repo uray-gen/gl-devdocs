@@ -26,7 +26,7 @@
 				<pre
 					ref="codeblock"
 					class="javascript"
-				><code>const { {{ cls?.name }} } = require('{{ cls?.global }}');
+				><code>const { {{ cls?.name }} } = require('{{ docs?.global }}');
 <br>new {{ cls?.name }}(<span v-for="(param, idx) in constructorParameters" :key="param.name">{{ param.name }}{{ (constructorParameters?.length ?? 1) - 1 !== idx ? ', ' : '' }}</span>);</code></pre>
 				<ParameterTable v-if="cls.construct.params" :parameters="cls.construct.params" />
 			</div>
