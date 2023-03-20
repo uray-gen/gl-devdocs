@@ -9,7 +9,7 @@ export default new DocsSource({
 	global: 'gl-brawlstars',
 	docsRepo: 'uray-gen/gl-devdocs',
 	repo: 'uray-gen/gl-brawlstars',
-	defaultTag: 'main',
+	defaultTag: 'stable',
 	branchFilter: (branch: string) => !branchBlacklist.has(branch) && !branch.startsWith('renovate/') && !branch.startsWith('chore/'),
 	tagFilter: (tag: string) => semver.gte(tag.replace(/(^@.*\/.*@v?)?(?<semver>\d+.\d+.\d+)-?.*/, '$<semver>'), '9.0.0'),
 });
